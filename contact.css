@@ -1,0 +1,193 @@
+   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    :root {
+      --bg:       #0e0c0a;
+      --card:     #161310;
+      --border:   rgba(255,210,120,0.12);
+      --amber:    #ffb347;
+      --amber-dim:#c47a15;
+      --text:     #f5ead8;
+      --muted:    #8a7a65;
+      --soft:     #3a3028;
+    }
+ 
+    body {
+      min-height: 100vh;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Sans', sans-serif;
+      padding: 60px 16px 40px;
+    }
+ 
+    /* ── Lamp ── */
+    .ceiling-cord {
+      position: fixed; top: 0; left: 50%; transform: translateX(-50%);
+      width: 2px; height: 110px;
+      background: linear-gradient(to bottom, #555, #333);
+      z-index: 10;
+    }
+    .lamp-head {
+      position: fixed; top: 96px; left: 50%; transform: translateX(-50%);
+      z-index: 10;
+    }
+    .lamp-shade {
+      width: 0; height: 0;
+      border-left: 44px solid transparent;
+      border-right: 44px solid transparent;
+      border-top: 52px solid #2a2218;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,.8));
+    }
+    .lamp-bulb {
+      position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+      width: 12px; height: 12px;
+      background: radial-gradient(circle,#fff8e0,#ffcc55);
+      border-radius: 50%;
+      box-shadow: 0 0 8px 4px #ffcc55, 0 0 24px 12px rgba(255,180,60,.6), 0 0 60px 30px rgba(255,140,30,.3);
+      animation: flicker 4s ease-in-out infinite;
+    }
+    @keyframes flicker {
+      0%,100%{ opacity:1; box-shadow:0 0 8px 4px #ffcc55,0 0 24px 12px rgba(255,180,60,.6),0 0 60px 30px rgba(255,140,30,.3); }
+      45%    { opacity:.9; box-shadow:0 0 5px 2px #ffcc55,0 0 18px 9px rgba(255,180,60,.45),0 0 45px 22px rgba(255,140,30,.22); }
+      75%    { opacity:.85; }
+    }
+    .light-cone {
+      position: fixed; top: 148px; left: 50%; transform: translateX(-50%);
+      width: 700px; height: 700px;
+      background: radial-gradient(ellipse 55% 70% at 50% 0%,rgba(255,175,60,.11) 0%,rgba(255,130,30,.06) 40%,transparent 75%);
+      pointer-events: none; z-index: 1;
+      animation: flicker 4s ease-in-out infinite;
+    }
+ 
+    /* ── Card ── */
+    .card {
+      position: relative; z-index: 5;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      width: 100%; max-width: 560px;
+      overflow: hidden;
+      box-shadow: 0 8px 48px rgba(0,0,0,.65), 0 2px 8px rgba(0,0,0,.4);
+      animation: rise .7s cubic-bezier(.16,1,.3,1) both;
+    }
+    @keyframes rise {
+      from{ opacity:0; transform:translateY(24px); }
+      to  { opacity:1; transform:translateY(0);    }
+    }
+    .card::before {
+      content:''; position:absolute; inset:0; border-radius:22px;
+      background: radial-gradient(ellipse 80% 36% at 50% 0%,rgba(255,175,60,.07) 0%,transparent 70%);
+      pointer-events:none;
+    }
+ 
+    /* ── Header band ── */
+    .header {
+      padding: 36px 40px 28px;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    .badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(255,179,71,.1);
+      border: 1px solid rgba(255,179,71,.2);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: .7rem; font-weight: 600;
+      color: var(--amber); letter-spacing: .1em; text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .badge svg { width:12px; height:12px; }
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.75rem; color: var(--text);
+      letter-spacing: -.02em; line-height: 1.1;
+    }
+    h1 em { color: var(--amber); font-style: italic; }
+    .tagline {
+      margin-top: 6px; font-size: .8rem;
+      color: var(--muted); font-weight: 300;
+      font-style: italic; letter-spacing: .02em;
+    }
+ 
+    /* ── Contact blocks ── */
+    .contacts { padding: 32px 40px 36px; display: flex; flex-direction: column; gap: 0; }
+ 
+    .contact-item {
+      display: flex; align-items: flex-start; gap: 18px;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(255,200,100,.06);
+      animation: rise .6s cubic-bezier(.16,1,.3,1) both;
+    }
+    .contact-item:last-child { border-bottom: none; }
+    .contact-item:nth-child(1){ animation-delay:.1s; }
+    .contact-item:nth-child(2){ animation-delay:.2s; }
+    .contact-item:nth-child(3){ animation-delay:.3s; }
+ 
+    .icon-box {
+      flex-shrink: 0;
+      width: 44px; height: 44px;
+      background: rgba(255,179,71,.08);
+      border: 1px solid rgba(255,179,71,.18);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      transition: background .2s, border-color .2s;
+    }
+    .contact-item:hover .icon-box {
+      background: rgba(255,179,71,.15);
+      border-color: rgba(255,179,71,.35);
+    }
+    .icon-box svg { width: 20px; height: 20px; color: var(--amber); }
+ 
+    .info { flex: 1; }
+    .info-label {
+      font-size: .68rem; font-weight: 600;
+      color: var(--muted); letter-spacing: .1em;
+      text-transform: uppercase; margin-bottom: 4px;
+    }
+    .info-main {
+      font-size: .92rem; color: var(--text); font-weight: 400;
+      line-height: 1.5;
+    }
+    .info-main a {
+      color: var(--text); text-decoration: none;
+      transition: color .2s;
+    }
+    .info-main a:hover { color: var(--amber); }
+    .info-sub {
+      font-size: .77rem; color: var(--muted);
+      margin-top: 2px; font-style: italic;
+    }
+ 
+    /* ── Map strip ── */
+    .map-strip {
+      margin: 0 40px 36px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      height: 160px;
+      position: relative;
+    }
+    .map-strip iframe {
+      width: 100%; height: 100%;
+      border: none; filter: grayscale(1) invert(1) hue-rotate(180deg) brightness(.75);
+    }
+    .map-strip-label {
+      position: absolute; bottom: 10px; left: 12px;
+      background: rgba(22,19,16,.85);
+      border: 1px solid var(--border);
+      border-radius: 8px; padding: 4px 10px;
+      font-size: .7rem; color: var(--amber); letter-spacing: .06em;
+      backdrop-filter: blur(4px);
+    }
+ 
+    /* ── Footer ── */
+    .card-footer {
+      margin: 0 40px 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: .75rem; color: var(--muted);
+    }
+    .card-footer strong { color: var(--amber-dim); font-weight: 500; }
+
