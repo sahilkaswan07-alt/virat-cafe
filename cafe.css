@@ -1499,6 +1499,46 @@ hr{
       .lunch-img img,
       .dinner-img img { width:100%; height:240px; }
     }
+
+
+@media (max-width: 768px){
+
+    /* ALL SECTION IMAGES SAME SIZE */
+
+    .breakfast-img,
+    .lunch-img,
+    .dinner-img{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .breakfast-img img,
+    .lunch-img img,
+    .dinner-img img{
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 260px !important;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+
+    /* SECTION SPACING */
+
+    .breakfast,
+    .lunch,
+    .dinner{
+        padding: 20px 14px;
+        gap: 24px;
+    }
+
+}
+
+
+
+
+
     
     
      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
