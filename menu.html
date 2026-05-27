@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virat cafe & restaurant</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar">
+  <a class="nav-logo" href="index.html">Virat Cafe &amp; Restaurant</a>
+  <a class="nav-back" href="index.html"><i class="fa fa-arrow-left"></i> Home</a>
+</nav>
+ 
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-eyebrow">Virat Cafe &amp; Restaurant</div>
+  <h1>Our <span>Menu</span></h1>
+  <p class="hero-sub">Crafted with love · Fresh every day · Anand, Gujarat</p>
+</div>
+ 
+<!-- Tab Nav -->
+<nav class="tab-nav">
+  <button class="tab-btn active" onclick="showTab('breakfast',this)"><i class="fa fa-sun"></i> Breakfast</button>
+  <button class="tab-btn" onclick="showTab('lunch',this)"><i class="fa fa-bowl-rice"></i> Lunch</button>
+  <button class="tab-btn" onclick="showTab('dinner',this)"><i class="fa fa-moon"></i> Dinner</button>
+  <button class="tab-btn" onclick="showTab('cafe',this)"><i class="fa fa-mug-hot"></i> Cafe &amp; Drinks</button>
+  <button class="tab-btn" onclick="showTab('desserts',this)"><i class="fa fa-ice-cream"></i> Desserts</button>
+</nav>
+ 
+<!-- ══════════════════ BREAKFAST ══════════════════ -->
+<div class="menu-body">
+<section class="menu-section active" id="breakfast">
+  <div class="section-header">
+    <h2>Breakfast <em>Menu</em></h2>
+    <p>Served 7:00 AM – 12:00 PM · Start your day with warmth</p>
+    <div class="section-rule"><span>☀</span></div>
+  </div>
+ 
+  <div class="cat-label"><i class="fa fa-leaf"></i> Parathas &amp; Rotis</div>
+  <div class="items-grid">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Aloo Paratha</div></div>
+        <div class="item-desc">Whole wheat paratha stuffed with spiced potato, served with butter, curd &amp; pickle.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>80</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Paneer Paratha</div></div>
+        <div class="item-desc">Flaky paratha filled with herbed cottage cheese, served with mint chutney.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>100</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Methi Thepla</div></div>
+        <div class="item-desc">Gujarati classic — soft fenugreek flatbread, served with curd &amp; aachar.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>70</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Mix Veg Paratha</div></div>
+        <div class="item-desc">Seasonal vegetables blended with spices, stuffed in golden paratha.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>90</div>
+    </div>
+  </div>
+ 
+  <div class="cat-label"><i class="fa fa-egg"></i> South Indian</div>
+  <div class="items-grid">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Masala Dosa</div></div>
+        <div class="item-desc">Crispy rice crepe with spiced potato filling, sambar &amp; 2 chutneys.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>110</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Idli Sambar</div></div>
+        <div class="item-desc">4 soft steamed rice cakes with piping hot sambar &amp; coconut chutney.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>80</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Uttapam</div></div>
+        <div class="item-desc">Thick rice pancake topped with onion, tomato &amp; green chilli.</div>
+        <div class="item-tags"><span class="tag spicy">Spicy</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>90</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Medu Vada</div></div>
+        <div class="item-desc">Crispy urad dal donuts served with sambar &amp; fresh coconut chutney.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>75</div>
+    </div>
+  </div>
+ 
+  <div class="cat-label"><i class="fa fa-bread-slice"></i> Continental &amp; Snacks</div>
+  <div class="items-grid">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Veg Sandwich</div></div>
+        <div class="item-desc">Toasted multigrain bread with cucumber, tomato, cheese &amp; mint chutney.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>90</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot nonveg"></div><div class="item-name">Egg Bhurji Toast</div></div>
+        <div class="item-desc">Spiced scrambled eggs on toasted butter bread with onion &amp; coriander.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>110</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Poha</div></div>
+        <div class="item-desc">Flattened rice with mustard, curry leaves, onion &amp; sev — home comfort in a bowl.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>60</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Upma</div></div>
+        <div class="item-desc">Semolina porridge tempered with mustard, cashews, vegetables &amp; lemon.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>65</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══════════════════ LUNCH ══════════════════ -->
+<section class="menu-section" id="lunch">
+  <div class="section-header">
+    <h2>Lunch <em>Menu</em></h2>
+    <p>Served 12:00 PM – 4:00 PM · Bold, wholesome, made to order</p>
+    <div class="section-rule"><span>☀</span></div>
+  </div>
+ 
+  <div class="cat-label"><i class="fa fa-bowl-rice"></i> Thali &amp; Rice</div>
+  <div class="items-grid">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Gujarati Thali</div></div>
+        <div class="item-desc">Dal, sabji, kadhi, rice, 3 rotis, farsan, papad, salad, pickle &amp; sweet.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>180</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot nonveg"></div><div class="item-name">Chicken Thali</div></div>
+        <div class="item-desc">Chicken curry, dal tadka, steamed rice, 2 rotis, salad &amp; raita.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>220</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Jeera Rice + Dal Fry</div></div>
+        <div class="item-desc">Fragrant cumin rice paired with golden dal fry, papad &amp; pickle.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>130</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot nonveg"></div><div class="item-name">Chicken Biryani</div></div>
+        <div class="item-desc">Aromatic basmati layered with tender chicken, served with salan &amp; raita.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span><span class="tag spicy">Spicy</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>200</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Veg Biryani</div></div>
+        <div class="item-desc">Seasonal vegetables slow-cooked with whole spices &amp; saffron rice.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>160</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot nonveg"></div><div class="item-name">Mutton Curry + Rice</div></div>
+        <div class="item-desc">Slow-cooked mutton in rich masala gravy, served with steamed rice.</div>
+        <div class="item-tags"><span class="tag spicy">Spicy</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>260</div>
+    </div>
+  </div>
+ 
+  <div class="cat-label"><i class="fa fa-fire"></i> Curries &amp; Gravies</div>
+  <div class="items-grid">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Paneer Butter Masala</div></div>
+        <div class="item-desc">Soft cottage cheese in velvety tomato-cream gravy. A timeless classic.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>160</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Dal Makhani</div></div>
+        <div class="item-desc">Black lentils simmered overnight with butter &amp; cream. Comfort in a bowl.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>140</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot nonveg"></div><div class="item-name">Butter Chicken</div></div>
+        <div class="item-desc">Tandoor-kissed chicken in rich, mildly spiced tomato butter sauce.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>200</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Chana Masala</div></div>
+        <div class="item-desc">Hearty chickpea curry with tangy spices, served with bhatura or rice.</div>
+        <div class="item-tags"><span class="tag spicy">Spicy</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>120</div>
+    </div>
+  </div>
+ 
+  <div class="cat-label"><i class="fa fa-bread-slice"></i> Breads</div>
+  <div class="items-grid">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Butter Naan</div></div>
+        <div class="item-desc">Soft leavened bread baked in tandoor, brushed with fresh butter.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>40</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Garlic Naan</div></div>
+        <div class="item-desc">Classic naan topped with roasted garlic &amp; coriander butter.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>50</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Tandoori Roti</div></div>
+        <div class="item-desc">Whole wheat roti baked directly on tandoor walls. Light &amp; wholesome.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>30</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Lachha Paratha</div></div>
+        <div class="item-desc">Flaky multi-layered paratha — perfect to scoop up every drop of curry.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>45</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══════════════════ DINNER ══════════════════ -->
+<section class="menu-section" id="dinner">
+  <div class="section-header">
+    <h2>Dinner <em>Menu</em></h2>
+    <p>Served 7:00 PM – 11:00 PM · Rich, refined &amp; unforgettable</p>
+    <div class="section-rule"><span>🌙</span></div>
+  </div>
+ 
+  <div class="cat-label"><i class="fa fa-star"></i> Starters &amp; Tandoor</div>
+  <div class="items-grid">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Paneer Tikka</div></div>
+        <div class="item-desc">Marinated cottage cheese grilled in tandoor, served with mint chutney &amp; onion rings.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>180</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot nonveg"></div><div class="item-name">Chicken Tikka</div></div>
+        <div class="item-desc">Boneless chicken pieces marinated in yoghurt &amp; spices, chargrilled to perfection.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span><span class="tag spicy">Spicy</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>220</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot nonveg"></div><div class="item-name">Seekh Kebab</div></div>
+        <div class="item-desc">Minced mutton &amp; spice skewers flame-grilled, with onion &amp; lemon.</div>
+        <div class="item-tags"><span class="tag spicy">Spicy</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>240</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Hara Bhara Kebab</div></div>
+        <div class="item-desc">Spinach &amp; pea patties with ginger-chilli, pan-grilled golden.</div>
+        <div class="item-tags"><span class="tag new">New</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>140</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot nonveg"></div><div class="item-name">Fish Tikka</div></div>
+        <div class="item-desc">Tender fish marinated in ajwain-yoghurt, grilled &amp; served with green chutney.</div>
+        <div class="item-tags"><span class="tag new">New</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>260</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Veg Platter</div></div>
+        <div class="item-desc">Paneer tikka, hara kebab, stuffed mushroom &amp; grilled veggies combo.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>280</div>
+    </div>
+  </div>
+ 
+  <div class="cat-label"><i class="fa fa-fire-burner"></i> Main Course</div>
+  <div class="items-grid">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot nonveg"></div><div class="item-name">Rogan Josh</div></div>
+        <div class="item-desc">Kashmiri-style slow-braised mutton in aromatic whole spice gravy.</div>
+        <div class="item-tags"><span class="tag spicy">Spicy</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>300</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Shahi Paneer</div></div>
+        <div class="item-desc">Cottage cheese in rich cashew-cream-tomato gravy, fragrant with cardamom.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>180</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot nonveg"></div><div class="item-name">Chicken Chettinad</div></div>
+        <div class="item-desc">South Indian bold spiced chicken with kalpasi &amp; marathi mokku.</div>
+        <div class="item-tags"><span class="tag spicy">Spicy</span><span class="tag new">New</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>250</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Matar Mushroom</div></div>
+        <div class="item-desc">Button mushrooms &amp; green peas in a light, herbed onion-tomato gravy.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>160</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══════════════════ CAFE & DRINKS ══════════════════ -->
+<section class="menu-section" id="cafe">
+  <div class="section-header">
+    <h2>Cafe &amp; <em>Drinks</em></h2>
+    <p>All day · Freshly brewed &amp; handcrafted</p>
+    <div class="section-rule"><span>☕</span></div>
+  </div>
+ 
+  <div class="cat-label"><i class="fa fa-mug-hot"></i> Hot Beverages</div>
+  <div class="items-grid">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Masala Chai</div></div>
+        <div class="item-desc">Spiced milk tea with ginger, cardamom, clove &amp; tulsi. The soul of India.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>40</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Filter Coffee</div></div>
+        <div class="item-desc">South Indian drip coffee with frothy hot milk. Rich &amp; bold.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>60</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Cappuccino</div></div>
+        <div class="item-desc">Double espresso with steamed milk foam, topped with cocoa dust.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>90</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Café Latte</div></div>
+        <div class="item-desc">Smooth espresso with velvety steamed milk, lightly layered.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>100</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Green Tea</div></div>
+        <div class="item-desc">Fragrant whole-leaf green tea, served with honey &amp; lemon on the side.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>60</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Hot Chocolate</div></div>
+        <div class="item-desc">Rich Belgian cocoa with steamed milk, topped with whipped cream.</div>
+        <div class="item-tags"><span class="tag sweet">Sweet</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>110</div>
+    </div>
+  </div>
+ 
+  <div class="cat-label"><i class="fa fa-glass-water"></i> Cold Drinks &amp; Shakes</div>
+  <div class="items-grid">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Cold Coffee</div></div>
+        <div class="item-desc">Blended coffee with chilled milk &amp; ice cream. Thick &amp; creamy.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>110</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Mango Lassi</div></div>
+        <div class="item-desc">Thick Alphonso mango blended with yoghurt &amp; a pinch of cardamom.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>90</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Fresh Lime Soda</div></div>
+        <div class="item-desc">House-squeezed lime with sparkling water. Sweet, salted or masala.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>60</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Strawberry Milkshake</div></div>
+        <div class="item-desc">Fresh strawberries blended with chilled milk &amp; vanilla ice cream.</div>
+        <div class="item-tags"><span class="tag sweet">Sweet</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>120</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Watermelon Juice</div></div>
+        <div class="item-desc">Freshly pressed seasonal watermelon with mint &amp; black salt.</div>
+        <div class="item-tags"><span class="tag new">New</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>70</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Rose Sharbat</div></div>
+        <div class="item-desc">Chilled rose syrup with basil seeds &amp; chilled milk. Desi &amp; refreshing.</div>
+        <div class="item-tags"></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>65</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══════════════════ DESSERTS ══════════════════ -->
+<section class="menu-section" id="desserts">
+  <div class="section-header">
+    <h2>Desserts <em>&amp; Sweets</em></h2>
+    <p>All day · Because every meal deserves a sweet ending</p>
+    <div class="section-rule"><span>🍮</span></div>
+  </div>
+ 
+  <div class="cat-label"><i class="fa fa-cake-candles"></i> Indian Sweets</div>
+  <div class="items-grid">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Gulab Jamun</div></div>
+        <div class="item-desc">Soft khoya dumplings soaked in rose-cardamom sugar syrup. Served warm (2 pcs).</div>
+        <div class="item-tags"><span class="tag popular">Popular</span><span class="tag sweet">Sweet</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>70</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Rasmalai</div></div>
+        <div class="item-desc">Soft chhena patties in saffron-rabdi, garnished with pistachio &amp; rose petals.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span><span class="tag sweet">Sweet</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>90</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Gajar Halwa</div></div>
+        <div class="item-desc">Slow-cooked carrot pudding with ghee, milk, sugar &amp; dry fruits.</div>
+        <div class="item-tags"><span class="tag sweet">Sweet</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>80</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Shahi Tukda</div></div>
+        <div class="item-desc">Fried bread soaked in rabdi with saffron, silver leaf &amp; almonds.</div>
+        <div class="item-tags"><span class="tag new">New</span><span class="tag sweet">Sweet</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>100</div>
+    </div>
+  </div>
+ 
+  <div class="cat-label"><i class="fa fa-ice-cream"></i> Ice Creams &amp; Cafe Desserts</div>
+  <div class="items-grid">
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Kulfi Falooda</div></div>
+        <div class="item-desc">Malai kulfi over vermicelli &amp; basil seeds in rose milk. A Surat favourite.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span><span class="tag sweet">Sweet</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>110</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Brownie with Ice Cream</div></div>
+        <div class="item-desc">Warm walnut brownie served with a scoop of vanilla ice cream &amp; chocolate drizzle.</div>
+        <div class="item-tags"><span class="tag popular">Popular</span><span class="tag sweet">Sweet</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>130</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Mango Sorbet</div></div>
+        <div class="item-desc">Alphonso mango churned into a light, dairy-free frozen sorbet.</div>
+        <div class="item-tags"><span class="tag new">New</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>90</div>
+    </div>
+    <div class="item">
+      <div class="item-info">
+        <div class="item-top"><div class="dot veg"></div><div class="item-name">Chocolate Lava Cake</div></div>
+        <div class="item-desc">Warm chocolate cake with molten centre, dusted with icing sugar.</div>
+        <div class="item-tags"><span class="tag sweet">Sweet</span><span class="tag new">New</span></div>
+      </div>
+      <div class="item-price"><sup>₹</sup>150</div>
+    </div>
+  </div>
+</section>
+</div>
+ 
+<!-- Footer -->
+<footer class="menu-footer">
+  <p>All prices are inclusive of taxes &nbsp;·&nbsp; <strong>🟢 Veg</strong> &nbsp;&amp;&nbsp; <strong style="color:#c03020">🔴 Non-Veg</strong> indicated on each item</p>
+  <p style="margin-top:8px">For allergies or dietary requirements, please inform our staff. &nbsp;·&nbsp; <strong>Virat Cafe &amp; Restaurant, Surat</strong></p>
+</footer>
+
+<script>
+  function showTab(id, btn) {
+    document.querySelectorAll('.menu-section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>

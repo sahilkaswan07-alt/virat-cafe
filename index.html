@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Virat cafe and restaurant</title>
+    <link rel="stylesheet" href="cafe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+</head>
+<body>
+     <header>
+        <nav class="navbar"> 
+            <div>
+              <img src="logo.png" alt="logo" height="70px"> 
+            </div> 
+            <div class="nav-item">
+                <a class="item1" href="index.html">Home</a>
+                <a class="item1" href="about.html">About</a>
+                <a class="item1" href="contact.html">contact</a>                     
+            </div>
+            <div class="nav-buttons">
+                <button class="btn-book" onclick="window.location.href='bookingtable.html'">Book a Table</button>
+                <button class="btn-menu" onclick="window.location.href='menu.html'">Menu</button>
+            </div>                               
+        </nav>
+    </header>
+    <main>
+       <div class="panel">
+  <div class="panel-inner">
+    <div class="name-wrapper">
+      <div class="cafe-name-shadow">Virat cafe &amp; restaurant</div>
+      <h1 id="cafe-name">Virat cafe &amp; restaurant</h1>
+    </div>
+    <div class="panel-divider"></div>
+    <p class="panel-subtitle">Fine Dining &nbsp;·&nbsp; Est. 2024</p>
+    <div class="panel-icons">
+      <div class="panel-icon-dot"><i class="fa fa-coffee"></i></div>
+      <div class="panel-icon-dot"><i class="fa fa-utensils"></i></div>
+      <div class="panel-icon-dot"><i class="fa fa-star"></i></div>
+    </div>
+  </div>
+</div>
+
+         <div class="hero">
+ 
+    <!-- LEFT: text side -->
+    <div class="hero-section">
+ 
+      <p>"From Morning Coffee to Evening Dinners — We Serve <em>Happiness</em> All Day."</p>
+ 
+      <p>Owner-Name</p>
+ 
+      <!-- CTA buttons (CSS only additions) -->
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="window.location.href='menu.html'">
+          View our menu
+        </button>
+        <button class="btn-ghost" onclick="window.location. href='contact.html'" >
+          Get in touch
+        </button>
+      </div>
+ 
+      <!-- stat strip -->
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">8+</span>
+          <span class="hero-stat-label">Years open</span>
+        </div>
+        <div class="hero-stat-sep"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">50+</span>
+          <span class="hero-stat-label">Menu items</span>
+        </div>
+        <div class="hero-stat-sep"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">4.9★</span>
+          <span class="hero-stat-label">Rated</span>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <!-- RIGHT: owner card -->
+    <div class="owner">
+      <div>
+        <span class="owner-badge">Meet the owner</span>
+ 
+        <img id="owner-detail" src="owner.jpg" target="main" alt="coffee at home">
+ 
+        <h3 id="owner-name">Owner: Name</h3>
+        <h3 id="owner-name">Email: @123</h3>
+      </div>
+    </div>
+ 
+  </div>
+        
+    </main>
+ 
+ <!-- ═══════════════ BREAKFAST ═══════════════ -->
+  <hr>
+  <div class="breakfast" id="breakfast">
+ 
+    <div class="breakfast-img">
+      <img src="breakfast.jpg" target="main" alt="breakfast" height="394px" width="594px">
+      <div class="img-pill">
+        <span class="pill-dot pill-dot-b"></span>
+        7:00 am – 12:00 pm
+      </div>
+    </div>
+ 
+    <div class="breakfast-detail">
+      <p class="eyebrow">Morning glory kitchen</p>
+      <h1 class="name">Breakfast<br><span>Time</span></h1>
+      <p class="meal-desc">
+        Hand-crafted morning plates made from the freshest local ingredients.
+        Every bite is warmth, flavour, and care.
+      </p>
+      <div class="stats">
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+          12 min avg
+        </div>
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 2l1.5 3.5 3.8.4-2.8 2.6.7 3.8L8 10.5l-3.2 1.8.7-3.8L2.7 5.9l3.8-.4z"/></svg>
+          4.9 rated
+        </div>
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 3h6M4 6h8M4 9h8M5 12h6" stroke-linecap="round"/></svg>
+          24+ items
+        </div>
+      </div>
+      <button class="button" onclick="window.location.href='breakfast.html';">
+        Explore menu
+        <span class="btn-arrow">
+          <svg viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 6.5h9M7 2.5l4 4-4 4"/></svg>
+        </span>
+      </button>
+    </div>
+ 
+  </div>
+ 
+  <!-- ═══════════════ LUNCH ═══════════════ -->
+  <hr>
+  <div class="lunch" id="lunch">
+ 
+    <div class="lunch-img">
+      <img src="lunch.jpg" target="main" alt="lunch" height="394px" width="594px">
+      <div class="img-pill">
+        <span class="pill-dot pill-dot-l"></span>
+        12:00 pm – 4:00 pm
+      </div>
+    </div>
+ 
+    <div class="lunch-detail">
+      <p class="eyebrow">Midday specials</p>
+      <h1 class="name">Lunch<br><span>Time</span></h1>
+      <p class="meal-desc">
+        Bold flavours and wholesome plates to fuel your afternoon.
+        Light, hearty, and always made to order.
+      </p>
+      <div class="stats">
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+          15 min avg
+        </div>
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 2l1.5 3.5 3.8.4-2.8 2.6.7 3.8L8 10.5l-3.2 1.8.7-3.8L2.7 5.9l3.8-.4z"/></svg>
+          4.8 rated
+        </div>
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 3h6M4 6h8M4 9h8M5 12h6" stroke-linecap="round"/></svg>
+          30+ items
+        </div>
+      </div>
+      <button class="button" onclick="window.location.href='lunch.html';">
+        Explore menu
+        <span class="btn-arrow">
+          <svg viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 6.5h9M7 2.5l4 4-4 4"/></svg>
+        </span>
+      </button>
+    </div>
+ 
+  </div>
+ 
+  <!-- ═══════════════ DINNER ═══════════════ -->
+  <hr>
+  <div class="dinner" id="dinner">
+ 
+    <div class="dinner-img">
+      <img src="dinner.jpg" target="main" alt="dinner" height="394px" width="594px">
+      <div class="img-pill">
+        <span class="pill-dot pill-dot-d"></span>
+        7:00 pm – 11:00 pm
+      </div>
+    </div>
+ 
+    <div class="dinner-detail">
+      <p class="eyebrow">Evening experience</p>
+      <h1 class="name">Dinner<br><span>Time</span></h1>
+      <p class="meal-desc">
+        An intimate evening spread crafted for those who savour the night.
+        Rich, refined, and utterly unforgettable.
+      </p>
+      <div class="stats">
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+          20 min avg
+        </div>
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 2l1.5 3.5 3.8.4-2.8 2.6.7 3.8L8 10.5l-3.2 1.8.7-3.8L2.7 5.9l3.8-.4z"/></svg>
+          5.0 rated
+        </div>
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 3h6M4 6h8M4 9h8M5 12h6" stroke-linecap="round"/></svg>
+          20+ items
+        </div>
+      </div>
+      <button class="button" onclick="window.location.href='dinner.html';">
+        Explore menu
+        <span class="btn-arrow">
+          <svg viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 6.5h9M7 2.5l4 4-4 4"/></svg>
+        </span>
+      </button>
+    </div>
+ 
+  </div>
+
+
+  
+
+ <!-- ═══════════════ DESSERT═══════════════ -->
+  <hr>
+  <div class="lunch" id="lunch">
+ 
+    <div class="lunch-img">
+      <img src="lunch.jpg" target="main" alt="lunch" height="394px" width="594px">
+      <div class="img-pill">
+        <span class="pill-dot pill-dot-e"></span>
+        12:00 pm – 4:00 pm
+      </div>
+    </div>
+ 
+    <div class="lunch-detail">
+      <p class="eyebrow">Midday specials</p>
+      <h1 class="name">Dessert<br><span>Time</span></h1>
+      <p class="meal-desc">
+       All day · Because every meal deserves a sweet ending
+      </p>
+      <div class="stats">
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+          5 min avg
+        </div>
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 2l1.5 3.5 3.8.4-2.8 2.6.7 3.8L8 10.5l-3.2 1.8.7-3.8L2.7 5.9l3.8-.4z"/></svg>
+          5 rated
+        </div>
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 3h6M4 6h8M4 9h8M5 12h6" stroke-linecap="round"/></svg>
+          30+ items
+        </div>
+      </div>
+      <button class="button" onclick="window.location.href='dessert.html';">
+        Explore menu
+        <span class="btn-arrow">
+          <svg viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 6.5h9M7 2.5l4 4-4 4"/></svg>
+        </span>
+      </button>
+    </div>
+ 
+  </div>
+
+  <!-- ═══════════════ CAFE & DRINKS ═══════════════ -->
+  <hr>
+  <div class="breakfast" id="breakfast">
+ 
+    <div class="breakfast-img">
+      <img src="breakfast.jpg" target="main" alt="breakfast" height="394px" width="594px">
+      <div class="img-pill">
+        <span class="pill-dot pill-dot-b"></span>
+        7:00 am – 12:00 pm
+      </div>
+    </div>
+ 
+    <div class="breakfast-detail">
+      <p class="eyebrow">All-time favorite</p>
+      <h1 class="name">Cafe & Drinks<br><span>Time</span></h1>
+      <p class="meal-desc">
+       All day · Freshly brewed &amp; handcrafted
+      </p>
+      <div class="stats">
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 1.5"/></svg>
+          5 min avg
+        </div>
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 2l1.5 3.5 3.8.4-2.8 2.6.7 3.8L8 10.5l-3.2 1.8.7-3.8L2.7 5.9l3.8-.4z"/></svg>
+          4.9 rated
+        </div>
+        <div class="stat-pill">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 3h6M4 6h8M4 9h8M5 12h6" stroke-linecap="round"/></svg>
+          24+ items
+        </div>
+      </div>
+      <button class="button" onclick="window.location.href='drink.html';">
+        Explore menu
+        <span class="btn-arrow">
+          <svg viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 6.5h9M7 2.5l4 4-4 4"/></svg>
+        </span>
+      </button>
+    </div>
+ 
+  </div>
+
+  <hr>
+
+
+
+ 
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+ 
+    <img src="logo.png" target="main" alt="cafe logo" height="600px" width="auto">
+ 
+    <div class="working-time">
+ 
+      <h2>Working time</h2>
+      <a>MONDAY to FRIDAY: 8:00 to 23:00</a>
+      <a>SATURDAY to SUNDAY: 7:00 to 22:00</a>
+ 
+      <div class="time-divider"></div>
+ 
+      <p>"Not every therapy needs words — sometimes a café is enough."</p>
+ 
+      <div>
+        <h2 id="social-media">Social media</h2>
+      </div>
+ 
+      <div class="social">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+        </svg>
+      </div>
+ 
+      <hr>
+ 
+      <div class="copyright">
+        <a>© 2026 Virat Cafe and Restaurant. All rights reserved.</a>
+      </div>
+ 
+      <a class="sahil-kaswan">Designed by: Dr. Sahil Choudhary
+        <br>Contact no. 7300479727
+      </a>
+ 
+    </div>
+ 
+    <!-- bottom strip -->
+    <div class="footer-strip">
+      <div class="strip-dot"></div>
+      <span>Virat Cafe &amp; Restaurant</span>
+      <div class="strip-dot"></div>
+    </div>
+ 
+  </footer>
+
+
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virat cafe & restaurant</title>
+     <link rel="stylesheet" href="bookingtable.css">
+</head>
+<body>
+      <!-- Navbar -->
+  <nav class="navbar">
+    <a class="nav-logo" href="index.html">Virat Cafe &amp; Restaurant</a>
+    <a class="nav-back" href="index.html"><i class="fa fa-arrow-left"></i> Back to Home</a>
+  </nav>
+ 
+  <div class="page">
+    <div class="container">
+ 
+      <!-- Header -->
+      <div class="page-header">
+        <div class="badge"><i class="fa fa-utensils"></i> Reserve Your Spot</div>
+        <h1>Book a <em>Table</em></h1>
+        <div class="header-rule"><span>✦</span></div>
+        <p>Virat Cafe &amp; Restaurant &nbsp;·&nbsp; Anand, Gujarat</p>
+      </div>
+ 
+      <!-- Form Card -->
+      <div class="form-card">
+        <form id="bookingForm" onsubmit="handleSubmit(event)">
+ 
+          <!-- ── 1. Reservation Details ── -->
+          <div class="form-section">
+            <div class="section-title"><i class="fa fa-calendar-alt"></i> Reservation Details</div>
+ 
+            <!-- Date & Time -->
+            <div class="datetime-row">
+              <div class="field">
+                <label>Date</label>
+                <div class="input-wrap">
+                  <i class="icon fa fa-calendar"></i>
+                  <input type="date" id="date" required/>
+                </div>
+              </div>
+              <div class="field">
+                <label>Time</label>
+                <div class="input-wrap">
+                  <i class="icon fa fa-clock"></i>
+                  <input type="time" id="time" required/>
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Number of Guests -->
+            <div class="field">
+              <label>Number of Guests</label>
+              <div class="guest-counter">
+                <button type="button" class="guest-btn" onclick="changeGuests(-1)">−</button>
+                <input class="guest-input" type="number" id="guests" value="2" min="1" max="20" readonly/>
+                <button type="button" class="guest-btn" onclick="changeGuests(1)">+</button>
+              </div>
+            </div>
+ 
+            <!-- Table Preference -->
+            <div class="field no-icon">
+              <label>Table Preference</label>
+              <div class="input-wrap">
+                <i class="icon fa fa-chair"></i>
+                <select id="table">
+                  <option value="">— Select preference —</option>
+                  <option>Indoor – Regular</option>
+                  <option>Indoor – Window Side</option>
+                  <option>Outdoor – Garden</option>
+                  <option>Private Dining</option>
+                  <option>No preference</option>
+                </select>
+              </div>
+            </div>
+          </div>
+ 
+          <!-- ── 2. Guest Details ── -->
+          <div class="form-section">
+            <div class="section-title"><i class="fa fa-user"></i> Guest Details</div>
+ 
+            <!-- Name -->
+            <div class="field">
+              <label>Full Name</label>
+              <div class="input-wrap">
+                <i class="icon fa fa-user"></i>
+                <input type="text" id="name" placeholder="Your full name" required/>
+              </div>
+            </div>
+ 
+            <!-- Mobile for Call -->
+            <div class="field">
+              <label>Mobile No. <span style="color:var(--muted);font-size:.65rem;text-transform:none;letter-spacing:0">(for call confirmation)</span></label>
+              <div class="input-wrap has-prefix">
+                <div class="phone-prefix">🇮🇳 +91</div>
+                <input type="tel" id="mobile" placeholder="98765 43210" maxlength="10" pattern="[0-9]{10}" required/>
+              </div>
+            </div>
+ 
+            <!-- WhatsApp Number -->
+            <div class="field">
+              <label>WhatsApp No. <span style="color:var(--muted);font-size:.65rem;text-transform:none;letter-spacing:0">(for booking confirmation)</span></label>
+              <div class="input-wrap has-prefix">
+                <div class="phone-prefix">🇮🇳 +91</div>
+                <input type="tel" id="whatsapp" placeholder="98765 43210" maxlength="10" pattern="[0-9]{10}"/>
+              </div>
+            </div>
+ 
+            <!-- Same as mobile toggle -->
+            <div class="field">
+              <label class="whatsapp-row" for="sameNum">
+                <input type="checkbox" id="sameNum" onchange="copyMobile(this)"/>
+                <span>WhatsApp number is <strong>same as mobile number</strong></span>
+                <i class="fa-brands fa-whatsapp wa-icon"></i>
+              </label>
+            </div>
+          </div>
+ 
+          <!-- ── 3. Special Requests ── -->
+          <div class="form-section">
+            <div class="section-title"><i class="fa fa-star"></i> Special Requests</div>
+ 
+            <div class="field note-wrap">
+              <label>Any special requests? (optional)</label>
+              <div class="input-wrap">
+                <i class="icon fa fa-pen"></i>
+                <textarea id="note" placeholder="Birthday decoration, dietary needs, high chair for baby, etc."></textarea>
+              </div>
+            </div>
+ 
+            <!-- Occasion -->
+            <div class="field no-icon">
+              <label>Occasion (optional)</label>
+              <div class="input-wrap">
+                <i class="icon fa fa-gift"></i>
+                <select id="occasion">
+                  <option value="">— Select occasion —</option>
+                  <option>Birthday Celebration</option>
+                  <option>Anniversary</option>
+                  <option>Family Gathering</option>
+                  <option>Business Lunch / Dinner</option>
+                  <option>Date Night</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+ 
+        </form>
+      </div>
+ 
+      <!-- Submit button outside card for visual separation -->
+      <div class="submit-wrap">
+        <button class="btn-submit" onclick="handleSubmit(event)">
+          <i class="fa fa-check-circle"></i>
+          Confirm My Reservation
+        </button>
+      </div>
+ 
+      <p class="page-foot">
+        We will call you to confirm your booking within 30 minutes.<br>
+        For immediate assistance call <strong style="color:var(--gold-lt)">+91 XXXXX XXXXX</strong>
+      </p>
+ 
+    </div>
+  </div>
+ 
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <i class="fa-brands fa-whatsapp" style="font-size:1.2rem"></i>
+    Booking confirmed! We'll reach you on WhatsApp shortly. 🎉
+  </div>
+   <script src="bookingtable.js"></script>
+</body>
+</html>

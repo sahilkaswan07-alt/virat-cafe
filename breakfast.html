@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virat cafe and restaurant</title>
+    <link rel="stylesheet" href="breakfast.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+</head>
+<body>
+    <header>
+        <nav class="navbar"> 
+            <div>
+              <img src="logo.png" alt="logo" height="70px"> 
+            </div> 
+            <div class="nav-item">
+                <a class="item1" href="index.html">Home</a>
+                <a class="item1" href="about.html">About</a>
+                <a class="item1" href="contact.html">contact</a>                     
+                     
+            </div>
+            <div class="search-bar">
+              <button id="cart-btn" onclick="showcart()">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span id="cart-count">0</span>
+              </button>
+                <div class="nav-buttons">
+                 <button class="btn-book" onclick="window.location.href='bookingtable.html'">Book a Table</button>
+                 <button class="btn-menu" onclick="window.location.href='menu.html'">Menu</button>
+                </div>
+            </div>
+            <div id="cart-box">
+             <h2>Your Cart</h2>
+             <div id="cart-items"></div>
+             <h3>Total ₹<span id="total">0</span></h3>
+             <input type="text" id="fullname" placeholder="Enter Full Name">
+             <button onclick="whatsapporder()">
+             Order on WhatsApp
+             </button>
+            </div>                          
+        </nav>
+    </header>
+    <main>
+         
+
+ 
+  <!-- cart pill (shows when items added) -->
+  <div id="cart-pill" onclick="window.location.href='cart.html'">
+    <i class="fa-solid fa-basket-shopping"></i>
+    <span id="cart-count">0</span> items · ₹<span id="cart-total">0</span>
+  </div>
+ 
+  <!-- ══════════ YOUR EXACT HTML BELOW ══════════ -->
+ 
+  <div class="breakfast-portion">
+    <h1 id="head-line">Breakfast <span>Time</span></h1>
+    <p>"Tea and coffee are not drinks — they are emotions served warm."</p>
+  </div>
+ 
+  <div class="section-divider"></div>
+ 
+  <!-- ROW 1 -->
+  <div class="box">
+    <div class="product">
+      <a href="groundnut.html"><img class="box1" src="cup of coffee.jpg" target="main" alt="groundnut"></a>
+      <br>
+      <div class="box-data">
+        <a class="name">Cup of coffee</a>
+        <br>
+        <a>Price = 25/-</a>
+        <br>
+        <span class="cart-button">
+          <button class="button" onclick="addtocart('Cup of coffee',25,)"><i class="fa-solid fa-cart-plus"></i></button>
+          <a>add to cart</a>
+        </span>
+      </div>
+    </div>
+ 
+    <div class="product">
+      <a href="groundnut.html"><img class="box1" src="cup of coffee.jpg" target="main" alt="groundnut"></a>
+      <br>
+      <div class="box-data">
+        <a class="name">Cup of Tea</a>
+        <br>
+        <a>Price = 15/-</a>
+        <br>
+        <span class="cart-button">
+          <button class="button" onclick="addtocart('Cup of Tea',15,this)"><i class="fa-solid fa-cart-plus"></i></button>
+          <a>add to cart</a>
+        </span>
+      </div>
+    </div>
+ 
+    <div class="product">
+      <a href="groundnut.html"><img class="box1" src="cup of coffee.jpg" target="main" alt="groundnut"></a>
+      <br>
+      <div class="box-data">
+        <a class="name">Poha</a>
+        <br>
+        <a>Price = 20/-</a>
+        <br>
+        <span class="cart-button">
+          <button class="button" onclick="addtocart('Poha',20,this)"><i class="fa-solid fa-cart-plus"></i></button>
+          <a>add to cart</a>
+        </span>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ROW 2 -->
+  <div class="box">
+    <div class="product">
+      <a href="groundnut.html"><img class="box1" src="cup of coffee.jpg" target="main" alt="groundnut"></a>
+      <br>
+      <div class="box-data">
+        <a class="name">Egg-Omelet</a>
+        <br>
+        <a>Price = 30/-</a>
+        <br>
+        <span class="cart-button">
+          <button class="button" onclick="addtocart('Egg-Omelet',30,this)"><i class="fa-solid fa-cart-plus"></i></button>
+          <a>add to cart</a>
+        </span>
+      </div>
+    </div>
+ 
+    <div class="product">
+      <a href="groundnut.html"><img class="box1" src="cup of coffee.jpg" target="main" alt="groundnut"></a>
+      <br>
+      <div class="box-data">
+        <a class="name">Paratha</a>
+        <br>
+        <a>Price = 20/-</a>
+        <br>
+        <span class="cart-button">
+          <button class="button" onclick="addtocart('Paratha',20,this)"><i class="fa-solid fa-cart-plus"></i></button>
+          <a>add to cart</a>
+        </span>
+      </div>
+    </div>
+ 
+    <div class="product">
+      <a href="groundnut.html"><img class="box1" src="cup of coffee.jpg" target="main" alt="groundnut"></a>
+      <br>
+      <div class="box-data">
+        <a class="name">French Toast</a>
+        <br>
+        <a>Price = 120/-</a>
+        <br>
+        <span class="cart-button">
+          <button class="button" onclick="addtocart('French Toast',120,this)"><i class="fa-solid fa-cart-plus"></i></button>
+          <a>add to cart</a>
+        </span>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ROW 3 -->
+  <div class="box">
+    <div class="product">
+      <a href="groundnut.html"><img class="box1" src="cup of coffee.jpg" target="main" alt="groundnut"></a>
+      <br>
+      <div class="box-data">
+        <a class="name">Bread Upma</a>
+        <br>
+        <a>Price = 30/-</a>
+        <br>
+        <span class="cart-button">
+          <button class="button" onclick="addtocart('Bread Upma',30,this)"><i class="fa-solid fa-cart-plus"></i></button>
+          <a>add to cart</a>
+        </span>
+      </div>
+    </div>
+ 
+    <div class="product">
+      <a href="groundnut.html"><img class="box1" src="cup of coffee.jpg" target="main" alt="groundnut"></a>
+      <br>
+      <div class="box-data">
+        <a class="name">Dosa</a>
+        <br>
+        <a>Price = 20/-</a>
+        <br>
+        <span class="cart-button">
+          <button class="button" onclick="addtocart('Dosa',20,this)"><i class="fa-solid fa-cart-plus"></i></button>
+          <a>add to cart</a>
+        </span>
+      </div>
+    </div>
+ 
+    <div class="product">
+      <a href="groundnut.html"><img class="box1" src="cup of coffee.jpg" target="main" alt="groundnut"></a>
+      <br>
+      <div class="box-data">
+        <a class="name">Oat Chilla</a>
+        <br>
+        <a>Price = 120/-</a>
+        <br>
+        <span class="cart-button">
+          <button class="button" onclick="addtocart('Oat Chilla',120,this)"><i class="fa-solid fa-cart-plus"></i></button>
+          <a>add to cart</a>
+        </span>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="page-end"></div>
+ 
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+ 
+    <img src="logo.png" target="main" alt="cafe logo" height="600px" width="auto">
+ 
+    <div class="working-time">
+ 
+      <h2>Working time</h2>
+      <a>Monday to Friday: 8:00 to 23:00</a>
+      <a>Saturday to Sunday: 7:00 to 22:00</a>
+ 
+      <div class="time-divider"></div>
+ 
+      <p>"Not every therapy needs words — sometimes a café is enough."</p>
+ 
+      <div>
+        <h2 id="social-media">Social media</h2>
+      </div>
+ 
+      <div class="social">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+        </svg>
+      </div>
+ 
+      <hr>
+ 
+      <div class="copyright">
+        <a>© 2026 Virat Cafe and Restaurant. All rights reserved.</a>
+      </div>
+ 
+      <a class="sahil-kaswan">Designed by: Dr. Sahil Choudhary
+        <br>Contact no. 7300479727
+      </a>
+ 
+    </div>
+ 
+    <!-- bottom strip -->
+    <div class="footer-strip">
+      <div class="strip-dot"></div>
+      <span>Virat Cafe &amp; Restaurant</span>
+      <div class="strip-dot"></div>
+    </div>
+ 
+  </footer>
+
+
+    <script src="cart.js"></script>
+</body>
+</html>
