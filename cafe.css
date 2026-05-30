@@ -1,65 +1,4 @@
-/*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;   
-}
-.navbar{
-    height:100%;
-    max-height: 80px;
-    width:100%;
-    max-width: 1400px;
-    background-color: rgba(130, 8, 10);
-    display: flex; 
-    flex-wrap: wrap;  
-    align-items: center;
-    justify-content: space-between;    
-    padding: 10px 30px; 
-    position: fixed;
-    z-index: 80;
-}
-.item1{ 
-    padding:70px;
-    color: white ;
-    text-decoration: none;
-    font-family:  "Old English Text MT", "Cloister Black", "Old English", fantasy;
-    font-size:18px;  
-    
-}
-.item1:hover{
-    color: gold;
-}
-input {
-   background-color:wheat ; 
-   color: navy;
-   border: none;    
-   padding:7px ;
-   border-radius: 5px;
-   
-}
-#button{
-    padding:7px 5px;
-    border:none;
-    background-color:rgba(248, 194, 3);
-    color: navy;
-    cursor:pointer;
-    border-radius:5px;    
-}*/
-/*.panel{ 
-    position: relative;
-    top: 77px;
-    width: 100%;
-    height: 250px;       
-    padding: 10px 30px;
-    background-color: #151a28;
-    display: flex;
-    align-items: center; 
-    justify-content: center;  
-}
-#cafe-name{
-    font-family:"Old English Text MT", "Cloister Black", "Old English", fantasy;
-    color: gold;
-   font-size: 70px;
-}*/
+
 * {
     margin: 0;
     padding: 0;
@@ -772,49 +711,6 @@ input {
 
 
 
-/*.hero{
-    display: flex;
-    justify-content: space-evenly;
-}
-.hero-section{
-    height:200px;
-    width: 600px;
-    background-color: #151a28;
-    border-radius: 15px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px 30px;
-    font-family:"Georgia", serif;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    margin:290px 30px 150px 40px;
-}
-.owner{
-    display: flex;
-    justify-content: flex-end;
-}
-#owner-detail{
-    height:400px;
-    width:400px;
-    border-radius: 50%;    
-    margin: 190px 30px 10px 30px;
-}
-#owner-detail:hover{
-    color: gold;
-    border: 3px solid;
-}
-#owner-name{
-    padding: 10px 80px;
-    font-family:"Old English Text MT", "Cloister Black", "Old English", fantasy;
-}
-hr{
-    margin: 40px 0px 40px 0px;
-    border: 2px solid ;
-    color: black;
-}*/
    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
  
     :root {
@@ -1107,121 +1003,7 @@ hr{
 
 
 
-/*.breakfast{
-    background-color: #151a28;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 3px solid rgba(130, 8, 10);
-}
-.breakfast-img{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;   
-    border: 3px solid rgba(130, 8, 10);    
-    height: 400px;
-    width: 600px;
-    border-radius: 10px; 
-    margin: 80px 30px 80px 80px;   
-}
-.breakfast-detail{
-    margin: 80px 250px 80px 30px; 
-    line-height: 3cm;  
-}
-.name{
-    font-family:"Old English Text MT", "Cloister Black", "Old English", fantasy;
-    font-size: 60px;
-    color: white;
-}
-.name:hover{
-    color: gold;
-}
-.button{    
-    padding:7px 5px;
-    border:none;
-    background-color:rgba(248, 194, 3);
-    color: navy;
-    cursor:pointer;
-    border-radius:5px;
-}
-.lunch{
-    background-color: #151a28;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 3px solid rgba(130, 8, 10);
-}
-.lunch-img{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;   
-    border: 3px solid rgba(130, 8, 10);    
-    height: 400px;
-    width: 600px;
-    border-radius: 10px; 
-    margin: 80px 30px 80px 80px;   
-}
-.lunch-detail{
-    margin: 80px 250px 80px 30px; 
-    line-height: 3cm;  
-}
-.dinner{
-    background-color: #151a28;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 3px solid rgba(130, 8, 10);
-}
-.dinner-img{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;   
-    border: 3px solid rgba(130, 8, 10);    
-    height: 400px;
-    width: 600px;
-    border-radius: 10px; 
-    margin: 80px 30px 80px 80px;   
-}
-.dinner-detail{
-    margin: 80px 250px 80px 30px; 
-    line-height: 3cm;  
-}
-.footer{
-    background-color:black ;
-    height: 100%;
-    max-height: 800px;
-    width: 100%;
-    display: flex;
-    color: white;
-}
-.working-time{
-    font-family:"Georgia", serif;
-    font-size: 24px;
-    padding: 20px 30px;
-    margin-top: 30px;
-}
-.social{
-     display: flex;    
-    width: 150px;   
-    justify-content: space-around;
-    font-size: 30px;
-}
-hr{
-    color: white; 
-    margin: 20px 0px 7px 0px; 
-}   
-.copyright{
-    font-size: 8px;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 0px;
-}
-.sahil-kaswan{
-    font-size: 16px;
-    color: gold;
-    padding: 2px;
-    text-decoration: underline;
-}*/
+
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
  
@@ -1805,3 +1587,59 @@ hr{
       .sahil-kaswan { text-align: center; }
     }
   
+
+
+
+/* ═════════════════════════════
+   iPad Air 820×1180 FIX
+═════════════════════════════ */
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+
+    .breakfast,
+    .lunch,
+    .dinner{
+        flex-direction: column !important;
+        align-items: center;
+        gap: 30px;
+        padding: 50px 20px;
+    }
+
+    .breakfast-img,
+    .lunch-img,
+    .dinner-img{
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .breakfast-img img,
+    .lunch-img img,
+    .dinner-img img{
+        width: 100% !important;
+        height: 400px !important;
+        object-fit: cover;
+        display: block;
+        border-radius: 20px;
+    }
+
+    .breakfast-detail,
+    .lunch-detail,
+    .dinner-detail{
+        width: 100%;
+        max-width: 700px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .meal-desc{
+        max-width: 100%;
+    }
+
+    .stats{
+        justify-content: center;
+    }
+
+    .button{
+        margin: 0 auto;
+    }
+}
